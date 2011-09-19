@@ -1,0 +1,15 @@
+Brief:
+
+Simple program to copy a file on local filesystems with a limited rate.
+Useful if you have a slow bus and need to safe qos/disk latency.
+
+Syntax:
+
+  java org.gnu.dc.Program <INFILE> <OUTFILE> <MB/s>
+
+Example:
+
+  java org.gnu.dc.Program file-a /tmp/file-a 8
+
+Copies "file-a" to "/tmp" and let's you still work, if your disks are
+connected via your usb2 hub.
